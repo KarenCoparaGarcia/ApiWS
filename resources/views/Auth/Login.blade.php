@@ -3,6 +3,9 @@
 @section('content')
 <div class="container p-3">
     <div class="row justify-content-center">
+        <div style="margin-bottom:60px">
+            <img src="http://3.208.158.199/magnussucre/images/logo_seguros_sucre_2.png" class="img-responsive" width="10%">
+        </div>
         <div class="col-md-8">
             <div class="card">
                 <div class="card-header">{{ __('Login') }}</div>
@@ -14,7 +17,7 @@
                             <label for="username" class="col-md-4 col-form-label text-md-end">{{ __('Username') }}</label>
 
                             <div class="col-md-6">
-                                <input id="username" type="text" class="form-control @error('username') is-invalid @enderror" name="username"  required  autofocus>
+                                <input id="username" type="text" class="form-control @error('username') is-invalid @enderror" name="username" required autofocus>
                                 @error('username')
                                 <span class="invalid-feedback" role="alert">
                                     <strong>{{ $message }}</strong>
